@@ -1,10 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>diary</title>
-</head>
-<body>
+{% extends "entries/base.html" %}
+
+{% block content%}
+
     {% for entry in entry_list %}
         <article>
             <h2 class="{{ entry.date_created|date:'l' }}">
@@ -17,5 +14,5 @@
             </h3>
         </article>
     {% endfor %}
-</body>
-</html>
+
+{% endblock %}
