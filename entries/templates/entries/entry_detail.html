@@ -6,4 +6,8 @@
         <h3>{{ entry.title }}</h3>
         <p>{{ entry.content }}</p>
     </article>
+    <p>
+        <a href="{% url 'entry-update-view' entry.id %}">Edit</a>
+        <a href="{% url 'entry-delete-view' entry.id %}">Delete</a>
+    </p>
 {% endblock %}

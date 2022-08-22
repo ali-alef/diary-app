@@ -96,3 +96,16 @@ input[type="submit"] {
 .Sunday {
     background-color: lightsalmon;
 }
+
+.messages {
+    padding: 0;
+    list-style: none;
+}
+
+.message {
+    width: 100%;
+    background: lightblue;
+    padding: 1rem;
+    text-align: center;
+    margin: 1rem 0;
+}

@@ -7,11 +7,11 @@
         <input type="submit" value="Save">
     </form>
     {% if entry %}
-        <a href="{% url 'entry-detail' entry.id %}">
+        <a href="{% url 'entry-detail-view' entry.id %}">
             <button>Cancel</button>
         </a>
     {% else %}
-        <a href="{% url 'entry-list' %}">
+        <a href="{% url 'entry-list-view' %}">
             <button>Cancel</button>
         </a>
     {% endif %}
