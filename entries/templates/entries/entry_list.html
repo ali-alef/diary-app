@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>diary</title>
+</head>
+<body>
+    {% for entry in entry_list %}
+        <article>
+            <h2 class="{{ entry.date_created|date:'l' }}">
+                {{ entry.date_created|date:'Y-m-d H:i' }}
+            </h2>
+            <h3>
+                <a href="{% url 'entry-detail' entry.id %}">
+                    {{ entry.title }}
+                </a>
+            </h3>
+        </article>
+    {% endfor %}
+</body>
+</html>
